@@ -1,23 +1,24 @@
 public class Room {
     private int nbrRoom;
     private String typeRoom;
-    private boolean disponibility;
+    private boolean availability;
+    private Hotel hotel;
 
-    public Room(int nbrRoom, String getTypeRoom) {
+    public Room(int nbrRoom) {
         this.nbrRoom = nbrRoom;
-        this.typeRoom = typeRoom;
-        this.disponibility = true;
+        this.availability = true;
     }
+
     public int getNbrRoom() {
         return nbrRoom;
     }
 
-    public String getTypeRoom() {
-        return typeRoom;
+    public boolean isAvailable() {
+        return availability;
     }
 
-    public boolean isAvailable() {
-        return disponibility;
+    public void setAvailability(boolean availability) {
+        this.availability = availability;
     }
 
 
